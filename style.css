@@ -8,6 +8,10 @@ div {
     margin: 6px;
 }
 
+.spacer {
+  margin-bottom: 7%;
+}
+
 .main {
     background-color: rgba(0, 0, 0, 0.07);
     border-radius: 25px;
@@ -19,19 +23,12 @@ div {
     font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
     height: 50%;
     width: 300px;
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
 }
 
 h1 {
   margin: 10px;
-}
-
-footer {
-    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 5%;
-    margin: 5%;
 }
 
 .ph-button {
@@ -57,12 +54,16 @@ footer {
   -moz-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.75);
   border-color: #FAFFD1;
-  background-color:rgba(0, 0, 0, 0.07);;
-
+  background-color:rgba(0, 0, 0, 0.07);
 }
+
 .ph-btn:hover, .ph-btn:active {
   background-color: #A1FFCE;
-  border-color: #FAFFD1;    
+  border-color: #FAFFD1;   
+}
+
+.ph-btn:focus {
+  outline: 0; 
 }
 
 @keyframes fadeIn {
@@ -78,4 +79,9 @@ footer {
 
 .is-paused {
   animation-play-state: paused;
+}
+
+footer {
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
