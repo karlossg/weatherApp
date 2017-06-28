@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///E:/Dysk%20Google/Programowanie/freecodecamp/weatherApp/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple weather app</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Simple weather app_files/css" rel="stylesheet">
+    <link href="./Simple weather app_files/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div style="margin-bottom: 10%"></div>
+    <div class="main">
+    <h1> simple weather app </h1>
+
+    <div id="icon"><img src="./Simple weather app_files/116.png" alt="weather icon"></div>
+    <div id="name"><img style="width: 15px;" src="./Simple weather app_files/maps-and-flags.png" alt="location pin icon"> Gdynia, Poland</div>
+    <div id="time">It's 2017-06-28 15:03</div>
+
+    <div id="swapper-temp-first" style="display:block;">Temp: 21 ℃</div>
+
+    <div id="swapper-temp-other" style="display:none;">Temp: 69.8 ℉</div>
+
+    <div id="swapper-wind-first" style="display:block;">Wind: ENE 24.1 km/h</div>
+
+    <div id="swapper-wind-other" style="display:none;">Wind: ENE 15 MPH</div>
+
+    <div id="humidity">Humidity: 60 %</div>
+
+<div class="ph-float">
+       <input id="test-btn" type="button" class="ph-button ph-btn-green" onclick="View.swapMetricToImperial(&#39;swapper-temp-first&#39;,&#39;swapper-temp-other&#39;); View.swapMetricToImperial(&#39;swapper-wind-first&#39;,&#39;swapper-wind-other&#39;)" value="Metric / Imperial">
+        </div> 
+
+    
+    
+    </div>
+    </main>
+    <footer class="footer">
+        <p>Created by <a href="https://github.com/karlossg" target="_blank"> Karol Grabowski</a> | 2017</p>
+    </footer>
+    <script src="./Simple weather app_files/app.js.pobrane"></script>
+
+
+</body></html>

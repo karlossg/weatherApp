@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple weather app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div style="margin-bottom: 10%"></div>
+        <div class="main">
+            <h1> simple weather app </h1>
+
+            <div id="icon"></div>
+            <div id="name"></div>
+            <div id="time"></div>
+
+            <div id="swapper-temp-first" style="display:block;" class="fade-in"></div>
+
+            <div id="swapper-temp-other" style="display:none;" class="fade-in"></div>
+
+            <div id="swapper-wind-first" style="display:block;" class="fade-in"></div>
+
+            <div id="swapper-wind-other" style="display:none;" class="fade-in"></div>
+
+            <div id="humidity"></div>
+
+            <div class="ph-float">
+                <input id='test-btn' type='button' class="ph-button ph-btn" onclick="Helpers.swapMetricToImperial('swapper-temp-first','swapper-temp-other'); Helpers.swapMetricToImperial('swapper-wind-first','swapper-wind-other')"
+                    value="Metric / Imperial">
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Created by <a href="https://github.com/karlossg" target="_blank"> Karol Grabowski</a> | 2017</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

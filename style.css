@@ -1,0 +1,81 @@
+body {
+    background: #A1FFCE;
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+}
+
+div {
+    margin: 6px;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 25px;
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2%;
+    text-align: center;
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    height: 50%;
+    width: 300px;
+    max-width: 80%;
+    margin: auto;
+}
+
+h1 {
+  margin: 10px;
+}
+
+footer {
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+}
+
+.ph-button {
+    border-width: 0px 0px 0px;
+    color: #000000;	   
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 400ms ease-in-out 0s;
+    white-space: nowrap;	
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px 9px;
+    font-size: 18px;
+    
+}
+.ph-btn {
+  -webkit-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-color: #FAFFD1;
+  background-color:rgba(0, 0, 0, 0.07);;
+
+}
+.ph-btn:hover, .ph-btn:active {
+  background-color: #A1FFCE;
+  border-color: #FAFFD1;    
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .7s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
