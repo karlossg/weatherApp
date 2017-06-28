@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <div style="margin-bottom: 10%"></div>
+        <div class="spacer"></div>
         <div class="main">
             <h1> simple weather app </h1>
 
@@ -29,8 +29,8 @@
 
             <div id="humidity"></div>
 
-            <div class="ph-float">
-                <input id='test-btn' type='button' class="ph-button ph-btn" onclick="Helpers.swapMetricToImperial('swapper-temp-first','swapper-temp-other'); Helpers.swapMetricToImperial('swapper-wind-first','swapper-wind-other')"
+            <div class="button">
+                <input type='button' class="ph-button ph-btn ph-float" onclick="Helpers.swapMetricToImperial('swapper-temp-first','swapper-temp-other'); Helpers.swapMetricToImperial('swapper-wind-first','swapper-wind-other')"
                     value="Metric / Imperial">
             </div>
 
