@@ -62,7 +62,7 @@ var Helpers = {
       }
       response.json().then(function (data) {
         city = data.results[1].address_components[3].long_name;
-        country = data.results[1].address_components[6].long_name;
+        country = data.results[1].address_components[5].long_name;
 
         View.showLocation();       
       });
