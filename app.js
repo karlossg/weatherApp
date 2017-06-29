@@ -97,29 +97,17 @@ var View = {
     iconToHtml.innerHTML = '<img src="https://' + icon + '"' + 'alt="weather icon" >';
   },
   showTemp: function() {
-    if (country === 'Bahamas' || country === 'United States of America' || country === 'Belize' || country === 'Cayman Islands') {
-      var CelsiusToHTML = document.getElementById('swapper-temp-first');
-      CelsiusToHTML.innerHTML = "Temp: " + fahrenheit + ' &#8457';
-      CelsiusToHTML = document.getElementById('swapper-temp-other');
-      CelsiusToHTML.innerHTML = "Temp: " + celsius + ' &#8451';
-    } else {
-        var fahrenheitToHTML = document.getElementById('swapper-temp-first');
-        fahrenheitToHTML.innerHTML = "Temp: " + celsius + ' &#8451';
-        fahrenheitToHTML = document.getElementById('swapper-temp-other');
-        fahrenheitToHTML.innerHTML = "Temp: " + fahrenheit + ' &#8457';
+    var fahrenheitToHTML = document.getElementById('swapper-temp-first');
+    fahrenheitToHTML.innerHTML = "Temp: " + celsius + ' &#8451';
+    fahrenheitToHTML = document.getElementById('swapper-temp-other');
+    fahrenheitToHTML.innerHTML = "Temp: " + fahrenheit + ' &#8457';
     }
   },
   showWind: function() { 
-    if (country === 'Bahamas' || country === 'United States of America' || country === 'Belize' || country === 'Cayman Islands' || country === 'United Kingdom' || country === 'American Samoa' || country === 'British Virgin Islands' || country === 'Dominica' || country === 'Falkland Islands' || country === 'Grenada' || country === 'Guam' || country === 'Myanmar' || country === 'Northern Mariana Islands' || country === 'Samoa' || country === 'Saint Lucia' || country === 'Saint Vincent and the Grenadines' || country === 'U.S. Virgin Islands' || country === 'Puerto Rico' || country === 'Turks and Caicos Islands' || country === 'Antigua and Barbuda' || country === 'Saint Helena' || country === ' Saint Kitts and Nevis') { 
-      var windMphToHtml = document.getElementById('swapper-wind-first');
-      windMphToHtml.innerHTML = "Wind: " + windDir + " " + windMph + " MPH";
-      windMphToHtml = document.getElementById('swapper-wind-other');
-      windMphToHtml.innerHTML = "Wind: " + windDir + " " + windKph + " km/h";
-    } else {
-        var windKphToHtml = document.getElementById('swapper-wind-first');
-        windKphToHtml.innerHTML = "Wind: " + windDir + " " + windKph + " km/h";
-        windKphToHtml = document.getElementById('swapper-wind-other');
-        windKphToHtml.innerHTML = "Wind: " + windDir + " " + windMph + " MPH";
+    var windKphToHtml = document.getElementById('swapper-wind-first');
+    windKphToHtml.innerHTML = "Wind: " + windDir + " " + windKph + " km/h";
+    windKphToHtml = document.getElementById('swapper-wind-other');
+    windKphToHtml.innerHTML = "Wind: " + windDir + " " + windMph + " MPH";
     }
   },
   showHumidity: function() {  
