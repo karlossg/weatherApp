@@ -101,14 +101,12 @@ var View = {
     fahrenheitToHTML.innerHTML = "Temp: " + celsius + ' &#8451';
     fahrenheitToHTML = document.getElementById('swapper-temp-other');
     fahrenheitToHTML.innerHTML = "Temp: " + fahrenheit + ' &#8457';
-    }
   },
   showWind: function() { 
     var windKphToHtml = document.getElementById('swapper-wind-first');
     windKphToHtml.innerHTML = "Wind: " + windDir + " " + windKph + " km/h";
     windKphToHtml = document.getElementById('swapper-wind-other');
     windKphToHtml.innerHTML = "Wind: " + windDir + " " + windMph + " MPH";
-    }
   },
   showHumidity: function() {  
     var humidityToHtml = document.getElementById('humidity');
